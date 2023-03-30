@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/moviePagedList">
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.skillbox.a017_recyclerview.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+    </fragment>
+
+    <fragment
+        android:id="@+id/movieList"
+        android:name="com.skillbox.a017_recyclerview.movielist.MovieListFragment"
+        android:label="Movies" />
+    <fragment
+        android:id="@+id/moviePagedList"
+        android:name="com.skillbox.a017_recyclerview.pagedmovielist.MoviePagedListFragment"
+        android:label="Paged Movies" />
+
+</navigation>
